@@ -10,3 +10,13 @@
  - поведение скрипта скорректировано в соответствии с последними требованиями (п.5-7)
  - оптимизированы некоторые алгоритмы
 
+Установка на Debain
+
+Установка зависимостей Perl для работы скрипта:
+apt-get install libxml-simple-perl libxml-libxml-simple-perl libsoap-lite-perl libconfig-simple-perl liblog-log4perl-perl libnet-ip-perl libemail-mime-perl libperlio-gzip-perl libdevel-size-perl liblog-dispatch-filerotate-perl
+
+Подготовка MySQL:
+CREATE USER 'RKN'@'%' IDENTIFIED BY 'yourpassword';
+create database rkn;
+use rkn;
+source /home/zapret.sql;
